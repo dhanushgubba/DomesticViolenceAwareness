@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background: url('../img/homeimage.jpg') no-repeat center center fixed;*/
+    background-size: cover;
+}
+
+.login-container {
+    width: 350px;
+    margin: 97px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 30%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="password"] + span,
+input[type="text"] + span {
+    font-size: 18px;
+    color: #4CAF50;
+}
+input[type="password"] + span:hover,
+input[type="text"] + span:hover {
+    color: #45a049;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message Styling */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

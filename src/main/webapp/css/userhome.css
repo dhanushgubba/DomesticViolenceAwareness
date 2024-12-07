@@ -1,0 +1,244 @@
+/* Welcome section */
+.welcome-section {
+    position: relative;
+    text-align: center;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-image: url('/img/userhome.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Adjust the opacity of the overlay */
+    border-radius: 10px;
+}
+
+.welcome-section h1 {
+    font-size: 2.5em;
+    color: #fff; /* White text for contrast */
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-section h2 {
+    font-size: 2em;
+    color: #fff; /* White text for contrast */
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    color: #fff; /* White text for contrast */
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Ensure the image inside the .welcome-section doesn't overflow */
+.welcome-section img {
+    display: none; /* Hide image if you are using background image */
+}
+
+/* Resource card container */
+.resources-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.resources-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+/* Resource cards */
+.resource-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-card h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.resource-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.resource-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resource-button:hover {
+    background-color: #388E3C;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .resources-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.statistics-section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.stat-card p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #f1f1f1;
+    padding: 40px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Blogs and Workshops Section */
+.blogs-workshops-section {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f1f1f1;
+    padding: 30px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.resource-card1 {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resource-card1 h2 {
+    margin-top: 0;
+}
+
+.resource-card1 p {
+    font-size: 1em;
+}
+.resource {
+	display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+.resource:hover {
+    transform: translateY(-5px);
+}

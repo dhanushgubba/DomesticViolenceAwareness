@@ -1,0 +1,141 @@
+/* General body styling */
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navbar styling */
+header {
+	background-color: #333;
+	padding: 10px;
+	color: white;
+}
+
+/* Centering the title */
+h3 {
+	text-align: center;
+	color: #333;
+	font-size: 28px;
+	margin-top: 20px;
+}
+
+/* Align the total users label on the right */
+h4 {
+	text-align: right;
+	font-size: 18px;
+	margin-right: 20px;
+	color: #555;
+}
+
+/* Styling for the table */
+table {
+	width: 90%;
+	margin: 20px auto;
+	border-collapse: collapse;
+	background-color: #fff;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	margin-bottom: 120px;
+}
+
+/* Table Header Styling */
+th {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px;
+	text-align: left;
+	font-size: 16px;
+}
+
+/* Table Data Styling */
+td {
+	padding: 12px;
+	text-align: left;
+	font-size: 14px;
+	color: #333;
+}
+
+/* Alternate row color */
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+tr:hover {
+	background-color: #ddd;
+}
+
+/* Styling for action buttons */
+.action-buttons {
+	display: flex;
+	gap: 10px;
+}
+
+/* Styling for the Edit button */
+.edit-btn, .delete-btn {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+	background-color: #45a049;
+}
+
+.delete-btn {
+	background-color: #f44336;
+}
+
+.delete-btn:hover {
+	background-color: #d32f2f;
+}
+
+/* Styling for the footer */
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+	margin-top: 30px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+	table {
+		width: 100%;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	.action-buttons {
+		flex-direction: column;
+		gap: 5px;
+	}
+	.edit-btn, .delete-btn {
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+.search-container {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.search-container input {
+	padding: 10px;
+	width: 80%;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}

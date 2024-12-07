@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.stories-header h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    margin: 0 auto;
+}
+
+.stories-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    margin-bottom:100px;
+}
+
+.stories-content {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 60%;
+}
+
+.stories-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    animation: fadeIn 3s ease-in-out, leftright 3s ease-in-out;
+}
+
+@keyframes leftright {
+	from{
+	    transform: translateX(-80px);
+	}
+	to{
+		transform: translateX(0px);
+	}
+}
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto; /* Use 'auto' to maintain aspect ratio */
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    animation: fadeIn 5s ease-in-out;
+}
+
+/* Hover effect */
+.image-content img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Increase shadow on hover */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Core Values Section Styling */
+.core-values-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.core-values-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.core-values-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.core-value {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.core-value h3 {
+    font-size: 1.5em;
+    color: #007acc;
+    margin-bottom: 15px;
+}
+
+.core-value p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.core-value:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow enhancement on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .core-values-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .core-value {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* What We Do Section Styling */
+.what-we-do-section {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.what-we-do-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Services Container */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+/* Service Item Styling */
+.service-item {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    text-align: left;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-info h3 {
+    font-size: 1.6em;
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+.service-info p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Media query for responsive layout */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+    }
+
+    .service-info h3 {
+        font-size: 1.5em;
+    }
+
+    .service-info p {
+        font-size: 1em;
+    }
+}
+
+/* Meet Our Team Section Styling */
+.meet-our-team-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.meet-our-team-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Team Container */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 30px;
+}
+
+/* Team Member Styling */
+.team-member {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Member Photo Styling */
+.member-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #007acc; /* Add a border to the circle */
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the circle */
+}
+
+/* Member Info Styling */
+.member-info h3 {
+    font-size: 1.6em;
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.member-info p:first-of-type {
+    font-weight: bold; /* Make the role bold for clarity */
+}
+
+/* Media query for responsive layout */
+@media (max-width: 768px) {
+    .team-container {
+        grid-template-columns: 1fr; /* Stack team members vertically on small screens */
+        padding: 0 10px;
+    }
+
+    .team-member {
+        padding: 20px;
+    }
+
+    .member-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .member-info h3 {
+        font-size: 1.4em;
+    }
+
+    .member-info p {
+        font-size: 1em;
+    }
+}
+
+

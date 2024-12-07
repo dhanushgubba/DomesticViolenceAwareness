@@ -1,0 +1,153 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
+}
+.logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 3s ease-in-out;
+}
+
+.logo-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from  {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+.logo-header h1 {
+    font-size: 30px;
+}
+
+
+/* Mobile responsiveness */
+@media ( max-width : 768px) {
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.navbar-links {
+		flex-direction: column;
+		width: 100%;
+	}
+	.navbar-links a {
+		width: 100%;
+		text-align: left;
+		padding: 12px 20px;
+	}
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures vertical alignment of all items */
+    background-color: #333;
+    padding: 14px 20px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center; /* Ensures links and dropdown are vertically centered */
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centers text within the link */
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    font-weight: 400;
+    transition: background-color 0.2s, padding-left 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    padding-left: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown::after {
+    content: '▼';
+    margin-left: 10px;
+    font-size: 10px;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .dropdown-content {
+        min-width: 150px;
+    }
+}
+
+.login-link {
+    background-color: #4CAF50;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    display: flex;
+    align-items: center; /* Centers text vertically */
+}
+
+

@@ -1,0 +1,178 @@
+/* General Styles for Contact Container */
+.contact-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for Each Section in Contact Form */
+.contact-section {
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Section Heading Style */
+.contact-section h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icon next to section headings */
+.contact-section h3 i {
+    font-size: 1.8em;
+    color: #4CAF50;
+}
+
+/* Form Styling */
+.contact-form .form-group {
+    margin-bottom: 25px;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Form Input Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focus Effect on Input Fields */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+/* Form Button Styling */
+.contact-form button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+/* Button Hover Effect */
+.contact-form button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Button Focus Effect */
+.contact-form button:focus {
+    outline: none;
+}
+
+/* Validation Errors */
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+    border-color: #D32F2F;
+    background-color: #FFEBEE;
+}
+
+/* Hover Effect for Links */
+.contact-form a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-form a:hover {
+    color: #388E3C;
+}
+
+/* Section for Address, Phone Number, and Social Media */
+.contact-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Social Media Links Style */
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links li {
+    padding: 12px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-links li:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+/* Responsive Layout for Smaller Devices */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contact-section h3 {
+        font-size: 1.4em;
+    }
+
+    .contact-form button {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
